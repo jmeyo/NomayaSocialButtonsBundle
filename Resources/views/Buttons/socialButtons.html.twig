@@ -27,3 +27,8 @@
       {{ pinterestButton(pinterest) }}
     </span>
 {% endif %}
+{% if mail is defined and mail is not sameas(false) %}
+    <span class="button linkedinButton col-xs-2">
+      {{ mailButton(mail) }}
+    </span>
+{% endif %}

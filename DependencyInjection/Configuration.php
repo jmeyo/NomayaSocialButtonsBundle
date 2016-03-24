@@ -62,6 +62,10 @@ class Configuration implements ConfigurationInterface
                             ->scalarNode('size')->end()
                             // Linkedin specific
                             ->scalarNode('counter')->end()
+                            // mail specific
+                            ->scalarNode('subject_mail')->end()
+                            ->scalarNode('body_mail')->end()
+                            ->scalarNode('share_mail_message')->end()
                         ->end()
                     ->end()
                 ->end()

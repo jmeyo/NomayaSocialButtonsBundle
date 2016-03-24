@@ -22,3 +22,7 @@ parameters:
                 size : 		medium
                 annotation : bubble
                 width : 	300
+            mail:
+                subject_mail: "I wanted you to see this site"
+                body_mail: "Check out this site"
+                share_mail_message: "Share by Email"

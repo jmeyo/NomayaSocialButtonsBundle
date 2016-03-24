@@ -37,7 +37,7 @@ class NomayaTwigSocialBar extends \Twig_Extension{
     public function __construct($container)
     {
         $this->container = $container;
-        $this->networks = array('facebook', 'twitter', 'googleplus', 'linkedin', 'tumblr', 'pinterest', 'youtube', 'instagram');
+        $this->networks = array('facebook', 'twitter', 'googleplus', 'linkedin', 'tumblr', 'pinterest', 'youtube', 'instagram','mail');
     }
     
     public function getName()
@@ -54,6 +54,7 @@ class NomayaTwigSocialBar extends \Twig_Extension{
         'googleplusButton'  => new \Twig_Function_Method($this, 'getGoogleplusButton' ,array('is_safe' => array('html'))),
         'linkedinButton'    => new \Twig_Function_Method($this, 'getLinkedinButton' ,array('is_safe' => array('html'))),
         'pinterestButton'   => new \Twig_Function_Method($this, 'getPinterestButton' ,array('is_safe' => array('html'))),
+        'mailButton'   => new \Twig_Function_Method($this, 'getMailButton' ,array('is_safe' => array('html'))),
       );
     }
 
@@ -103,6 +104,11 @@ class NomayaTwigSocialBar extends \Twig_Extension{
     public function getPinterestButton($parameters = array())
     {
        return $this->getButton('pinterest',$parameters);
+    }
+
+    public function getMailButton($parameters = array())
+    {
+       return $this->getButton('mail',$parameters);
     }
 
     private function getButton($network, $parameters = array())

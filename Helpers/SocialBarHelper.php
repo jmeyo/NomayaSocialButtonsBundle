@@ -50,6 +50,11 @@ class SocialBarHelper extends Helper
       return $this->socialButton('pinterest',$parameters);
     }
 
+    public function mailButton($parameters)
+    {
+      return $this->socialButton('mail',$parameters);
+    }
+
     public function getName()
     {
         return 'socialButtons';
