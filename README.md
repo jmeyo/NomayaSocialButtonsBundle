@@ -77,7 +77,7 @@ nomaya_social:
         twitter:
             url:            null
             locale:         "fr"
-            message:        "Je veux partager ça avec vous"
+            message:        "Je veux partager Ã§a avec vous"
             text:           "Tweet"
             via:            "L'Equipe cartedevisitevirtuelle.fr"
             tag:            "ttot"
@@ -132,7 +132,7 @@ The bundle provides a Twig extension for quickly generating the buttons.
 // links
 
 // insert the whole links defined in config
-"{{ sociallinks() }}"
+"{{ socialLinks() }}"
 
 // insert one link, no option
 "{{ socialLink('facebook') }}"
